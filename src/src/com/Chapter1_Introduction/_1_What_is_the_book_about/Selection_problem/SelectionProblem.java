@@ -11,7 +11,7 @@ import java.util.Arrays;
  */
 public class SelectionProblem {
     static int[] numbers = { 3, 2, 1, 5, 10, 9, 7, 8, 4, 6 };
-    static int k = 10;
+    static int k = 6;
 
     /**
      * solution 1
@@ -65,7 +65,7 @@ public class SelectionProblem {
     }
 
     private static String getCostTimeStr( long time ) {
-        double millTime = time / 1;
+        double millTime = time / Math.pow( 10, 6 );
         // Math.pow( 10, 6 )
         String constTimeStr = String.valueOf( millTime ) + " ms";
         return constTimeStr;
@@ -76,19 +76,13 @@ public class SelectionProblem {
         Util.log( "k: " + k );
 
         // solution 1
-        long time1 = System.currentTimeMillis();
         int result1 = solution1( numbers, k );
-        long deltaTime1 = System.currentTimeMillis() - time1;
         Util.log( "Solution 1 result: " + result1 );
-        Util.log( "Cost time: " + getCostTimeStr( deltaTime1 )  );
 
         Util.log( "====================================" );
 
         // solution 2
-        long time2 = System.currentTimeMillis();
         int result2 = solution2( numbers, k );
-        long deltaTime2 = System.currentTimeMillis() - time2;
         Util.log( "Solution 2 result: " + result2 );
-        Util.log( "Cost time: " + getCostTimeStr( deltaTime2 ) );
     }
 }

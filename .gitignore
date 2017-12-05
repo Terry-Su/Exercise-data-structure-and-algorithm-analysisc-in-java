@@ -1,6 +1,9 @@
 # idea
 .idea
 
+# out
+out
+
 # Logs
 logs
 *.log
