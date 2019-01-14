@@ -14,12 +14,36 @@ public class InsertionSortExample {
         arr[9] = 1;
 
 
+//        int in;
+//        int out; // out is marked item
+//
+//        for (out = 1;
+//            out < length;
+//            out++ ) {
+//            int tmp = arr[ out ]; // removed marked item
+//            in = out;
+//
+//            while ( in > 0 &&  arr[ in - 1 ] >= tmp ) {
+//                arr[ in ] = arr[ in - 1 ];  // shift item right
+//                in = in - 1;
+//            }
+//            arr[ in ] = tmp;
+//        }
+
+        insertionSort( arr );
+
+        for ( int i = 0; i < length; i++ ) {
+            System.out.println( arr[ i ] );
+        }
+    }
+
+    public static void insertionSort( int[] arr ) {
         int in;
         int out; // out is marked item
 
         for (out = 1;
-            out < length;
-            out++ ) {
+             out < arr.length;
+             out++ ) {
             int tmp = arr[ out ]; // removed marked item
             in = out;
 
@@ -28,10 +52,6 @@ public class InsertionSortExample {
                 in = in - 1;
             }
             arr[ in ] = tmp;
-        }
-
-        for ( int i = 0; i < length; i++ ) {
-            System.out.println( arr[ i ] );
         }
     }
 }
