@@ -44,22 +44,4 @@ public class ShellSortExample {
            }
        }
     }
-
-//    public static void insertionSort( int[] arr ) {
-//        int in;
-//        int out; // out is marked item
-//
-//        for (out = 1;
-//             out < arr.length;
-//             out++ ) {
-//            int tmp = arr[ out ]; // removed marked item
-//            in = out;
-//
-//            while ( in > 0 &&  arr[ in - 1 ] >= tmp ) {
-//                arr[ in ] = arr[ in - 1 ];  // shift item right
-//                in = in - 1;
-//            }
-//            arr[ in ] = tmp;
-//        }
-//    }
 }
